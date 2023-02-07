@@ -1,0 +1,18 @@
+main h2 {
+  margin: 1% 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  background: rgb(62, 156, 40);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 232, 16, 0.5914740896358543) 3%,
+    rgba(41, 215, 9, 1) 46%,
+    rgba(113, 193, 63, 0.953) 65%,
+    rgba(69, 207, 22, 1) 76%,
+    rgba(4, 195, 42, 0.4598214285714286) 96%
+  );
+}
