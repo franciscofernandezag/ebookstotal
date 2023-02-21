@@ -1,24 +1,21 @@
 import React from "react";
-import CartWidget from "./CartWidget";
+import logo from "../assets/logo2.png";
+import NavCategories from "./NavCategories";
+import CartWidget from "../Header/CartWidget";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-
-      <ul className="navbar-list">
-        <div>
-          <h1> EBOOKSTOTAL </h1>
-          <h2>Tiende Virtual de Ebooks</h2>
-        </div>
-        <li>Genero</li>
-        <li>Autor</li>
-        <li>Recomendados</li>
-        <li>Mi Cuenta</li>
-        <li><CartWidget /> </li>
-      </ul>
-      
-    </nav>
-    
+    <header >
+      <Link to={"/"}>
+        <img  src={logo} alt="Logo" />
+      </Link>
+      <h1>Bienvenido </h1>
+      <NavCategories />
+      <Link>
+        <CartWidget />
+      </Link>
+    </header>
   );
 };
 
