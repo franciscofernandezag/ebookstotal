@@ -1,10 +1,11 @@
-main h2 {
+h2 {
   margin: 1% 0;
+  margin-top: 50px;
   text-align: center;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 35px;
   background: rgb(62, 156, 40);
   background: linear-gradient(
@@ -15,4 +16,18 @@ main h2 {
     rgba(69, 207, 22, 1) 76%,
     rgba(4, 195, 42, 0.4598214285714286) 96%
   );
+}
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.container img {
+  margin: 10px;
+}
+.container img:hover {
+  transform: scale(1.2);
 }
