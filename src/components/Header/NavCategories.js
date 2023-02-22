@@ -3,23 +3,41 @@ import { NavLink } from "react-router-dom";
 
 const NavCategories = () => {
   const categories = [
-    { id: 1, name: "Home", route:'/categories/Home' },
-    { id: 2, name: "Genero", route:'/categories/Genero'},
-    { id: 3, name: "Autor", route:'/categories/Autor'},
-    { id: 4, name: "Recomendados", route:'/categories/Recomendados'},
-    { id: 5, name: "MiCuenta", route:'/categories/Mi Cuenta'}
+    { id: 1, name: "Clasico", route:'/categories/Clasico' },
+    { id: 2, name: "Novela", route:'/categories/Novela'},
+    { id: 3, name: "Divulgacion", route:'/categories/Divulgacion'},
+    { id: 4, name: "Filosofia", route:'/categories/Filosofia'},
+    { id: 5, name: "Autoayuda", route:'/categories/Autoayuda'}
+    
   ];
 
   return (
-    <nav>
-      {categories.map((category) => {
-        return (
-          <NavLink key={category.id} to={category.route}>
-            {category.name}
-          </NavLink>
-        );
-      })}
-    </nav>
+<nav style={{display: 'flex', justifyContent: 'center'}}>
+  {categories.map((category) => {
+    return (
+      <NavLink
+        key={category.id}
+        to={category.route}
+        style={{
+          marginRight: '10px',
+          textDecoration: 'none',
+          fontSize: '18px',
+          width: '120px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: 'black',
+          fontFamily: 'sans-serif',
+          fontStyle: 'normal',
+          fontWeight: '700',
+        }}
+        activeStyle={{fontWeight: 'bold'}}
+      >
+        {category.name}
+      </NavLink>
+    );
+  })}
+</nav>
   );
 };
 
